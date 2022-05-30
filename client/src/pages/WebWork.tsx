@@ -1,7 +1,7 @@
 import React from "react";
 import { Rnd } from "react-rnd";
 import { useAppDispatch } from '../app/hooks';
-import { updateShowWeb, updateShowVerse, updateShowKart, updateShowBirDB, updateShowWB, updateShowBJ95, updateShowLarry, updateShowDoom, updateShowDoomReadme, updateShowTodo } from '../features/window/windowSlice';
+import { updateShowWeb, updateShowVerse, updateShowKart, updateShowBirDB, updateShowWB, updateShowBJ95, updateShowLarry, updateShowDoom, updateShowDoomReadme, updateShowQuake, updateShowQuakeReadme, updateShowTodo } from '../features/window/windowSlice';
 
 function WebWork(): JSX.Element {
 
@@ -48,9 +48,10 @@ function WebWork(): JSX.Element {
         dispatch(updateShowDoomReadme(true))
     }
 
-    const handleDoomReadmeDoubleClick = (e: Event | any) => {
+    const handleQuakeDoubleClick = (e: Event | any) => {
         e.preventDefault()
-        dispatch(updateShowDoomReadme(true))
+        dispatch(updateShowQuake(true))
+        dispatch(updateShowQuakeReadme(true))
     }
 
     const handleTodoDoubleClick = (e: Event | any) => {
@@ -144,16 +145,15 @@ function WebWork(): JSX.Element {
                             DOOM.exe
                         </div>
                     </div>
-                    <div className="col web-work-icon" onDoubleClick={(e) => handleDoomReadmeDoubleClick(e)}>
-                    <img src="../img/notepad.png" width="60px" />
-                        <div className="web-work-doom-exe-text no-text-select">
-                            DOOM<br />
-                            Readme.txt
+                    <div className="col web-work-icon-quake" onDoubleClick={(e) => handleQuakeDoubleClick(e)}>
+                    <img src="../img/quake.png" width="48px" />
+                        <div className="web-work-quake-exe-text no-text-select">
+                            Quake.exe
                         </div>
                     </div>
                     <div className="col web-work-icon" onDoubleClick={(e) => handleTodoDoubleClick(e)}>
                     <img src="../img/notepad-pencil.png" width="60px" />
-                        <div className="web-work-doom-exe-text no-text-select">
+                        <div className="web-work-todo-text no-text-select">
                             Todo.txt
                         </div>
                     </div>

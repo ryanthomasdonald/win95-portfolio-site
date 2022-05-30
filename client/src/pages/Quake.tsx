@@ -34,7 +34,7 @@ function Quake(): JSX.Element {
             <div className="window-content">
                 <div className="row title-bar-bg-blue gx-0">
                 <div className="col-11 draggable">
-                    <img className="title-bar-left" src="img/doom-title-bar-left.png" />
+                    <img className="title-bar-left" src="img/quake-title-bar-left.png" />
                 </div>
                 <div className="col-1 d-flex justify-content-end">
                     <img className="title-bar-right" src="img/window-header-title-bar-right.png" useMap="#closeQuake" />

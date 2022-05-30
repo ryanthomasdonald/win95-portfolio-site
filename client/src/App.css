@@ -215,6 +215,11 @@ p {
     margin: 25px 0px 0px 30px;
 }
 
+.web-work-icon-quake {
+    margin: 25px 0px 0px 44px;
+    /* padding: 0px 0px 0px 10px; */
+}
+
 .web-work-iv-folder-text {
     margin: 10px 0px 0px -50px;
     font-family: "W95FA";
@@ -270,7 +275,25 @@ p {
 }
 
 .web-work-doom-exe-text {
-    margin: 10px 0px 0px -50px;
+    margin: 10px 0px 0px -45px;
+    font-family: "W95FA";
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    line-height: 22px;
+}
+
+.web-work-quake-exe-text {
+    margin: 9px 0px 0px -62px;
+    font-family: "W95FA";
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    line-height: 22px;
+}
+
+.web-work-todo-text {
+    margin: 12px 0px 0px -55px;
     font-family: "W95FA";
     color: #000000;
     font-size: 20px;
