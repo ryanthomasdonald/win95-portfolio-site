@@ -1,0 +1,72 @@
+html {
+    background-color: #000000;
+}
+
+body {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #008080;
+    border: 6px solid #C0C0C0;
+}
+
+@font-face {
+    font-family: "W95FA";
+    src: local('W95FA'), url("../fonts/W95FA.otf") format('opentype');
+}
+
+p, ul, li {
+    font-family: "W95FA";
+    color: #000000;
+    font-size: 30px;
+    text-align: center;
+    line-height: 34px;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    z-index: 5;
+}
+
+#top-icon {
+    padding: 277px 40px 0px 40px;
+}
+
+#chat-icon {
+    padding: 0px 10px 0px 10px;
+}
+
+#bottom-img {
+    padding: 0px 0px 50px 0px;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    z-index: 5;
+}
+
+.container {
+    position: relative;
+    top: -23px;
+}
+
+.pop-up-body {
+    position: absolute;
+    text-align: center;
+    top: 90px;
+    left: 150px;
+    padding: 0px 150px 0px 0px
+}
+
+.shadow{
+    filter: drop-shadow(0 0 8px #000000)
+}
+
+.wb-shadow{
+    filter: drop-shadow(0 0 3px #909090)
+}
+
+.tech-header{
+    padding: 58px 0px 15px 0px
+}

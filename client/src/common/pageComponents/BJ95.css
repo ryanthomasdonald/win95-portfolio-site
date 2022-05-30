@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "W95FA";
+    src: url("/public/fonts/W95FA.otf") format("opentype")
+}
+body{
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    background-size: 1200px 800px;
+    z-index: -50
+}
+.text-white{
+    color: white;
+}
+.windows-font{
+    font-family: "W95FA";
+    font-size: 18px;
+}
+.flex-container{
+    display: flex;
+}
+.button-box{
+    width: 600px;
+}
+.score-box{
+    width: 300px;
+}
