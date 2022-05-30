@@ -91,7 +91,7 @@ function QuakeReadme(): JSX.Element {
                             arrow keys and Enter.
                             </li>
                             <li>
-                                7. Seek them runes, boi!!!
+                                7. Seek them Runes, boi!!!
                             </li>
                         </ul>
                     </p>
