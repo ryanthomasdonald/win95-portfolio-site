@@ -49,7 +49,7 @@ function Quake(): JSX.Element {
                 </div>
                 </div>
                 <div className="doom-window gx-0" style={{ width: "100%", height: "100%" }}>
-                <DosPlayer bundleUrl="QUAKEMUSIC.jsdos" />
+                <DosPlayer bundleUrl="QUAKEMUSICAUTOEXEC.jsdos" />
                 </div>
             </div>
         </Rnd>
