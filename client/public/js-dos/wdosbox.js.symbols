@@ -13,7 +13,7 @@
 12:isWorker
 13:isNode
 14:emsc_getMTimeMs
-15:emsc_exit_runtime
+15:emsc_exit_runtime 
 16:__syscall40
 17:__syscall195
 18:__syscall10

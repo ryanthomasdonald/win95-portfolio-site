@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
-function Clock(){
+function Clock() {
   const [date, setDate] = useState(new Date());
-  
+
   function refreshClock() {
     setDate(new Date());
   }
@@ -15,45 +15,42 @@ function Clock(){
   }, []);
 
   function pullHours() {
-    let finalHours = 0
+    let finalHours = 0;
     if (date.getHours() === 0) {
-      finalHours = 12
+      finalHours = 12;
+    } else if (date.getHours() >= 13) {
+      finalHours = date.getHours() - 12;
+    } else {
+      finalHours = date.getHours();
     }
-    else if (date.getHours() >= 13) {
-      finalHours = date.getHours() - 12
-    }
-    else {
-      finalHours = date.getHours()
-    }
-    return finalHours
+    return finalHours;
   }
 
   function dummyZero() {
-    const showZero = "0"
+    const showZero = "0";
     if (date.getMinutes() < 10) {
-      return showZero
-    }
-    else {
-      return
+      return showZero;
+    } else {
+      return;
     }
   }
 
   function pullAMPM() {
-    let AMPM = ""
+    let AMPM = "";
     if (date.getHours() >= 13) {
-      AMPM = "PM"
+      AMPM = "PM";
+    } else {
+      AMPM = "AM";
     }
-    else {
-      AMPM = "AM"
-    }
-    return AMPM
+    return AMPM;
   }
 
   return (
     <span className="clock-text">
-      {pullHours()}:{dummyZero()}{date.getMinutes()} {pullAMPM()}
+      {pullHours()}:{dummyZero()}
+      {date.getMinutes()} {pullAMPM()}
     </span>
   );
-};
+}
 
 export default Clock;
